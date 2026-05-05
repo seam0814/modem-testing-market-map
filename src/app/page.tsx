@@ -82,7 +82,7 @@ export default function HomePage() {
             className="inline-flex h-11 items-center gap-2 rounded-full bg-indigo px-5 text-sm text-white transition-transform hover:scale-[1.02]"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            내 사업 플레이북
+            ModemHQ 보러가기
             <ArrowRight className="h-4 w-4" />
           </Link>
           <Link
