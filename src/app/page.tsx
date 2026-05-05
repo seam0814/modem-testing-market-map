@@ -78,23 +78,24 @@ export default function HomePage() {
 
         <div className="mt-10 flex flex-wrap gap-3">
           <Link
+            href="/playbook"
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-indigo px-5 text-sm text-white transition-transform hover:scale-[1.02]"
+          >
+            <Sparkles className="h-3.5 w-3.5" />
+            내 사업 플레이북
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link
             href="#ecosystem"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-foreground px-5 text-sm text-background transition-transform hover:scale-[1.02]"
           >
             생태계 그림 보기
-            <ArrowRight className="h-4 w-4" />
           </Link>
           <Link
             href="/positions"
-            className="inline-flex h-11 items-center gap-2 rounded-full border border-indigo/40 bg-indigo-bg px-5 text-sm text-indigo-deep transition-colors hover:bg-indigo-soft"
-          >
-            8개 포지션 분석
-          </Link>
-          <Link
-            href="/strategy"
             className="inline-flex h-11 items-center gap-2 rounded-full border border-border bg-surface px-5 text-sm transition-colors hover:bg-soft"
           >
-            Phase 빌드 전략
+            8개 포지션 분석
           </Link>
         </div>
       </section>

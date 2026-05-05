@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 const NAV = [
   { href: "/", label: "통신 시장" },
   { href: "/positions", label: "포지션" },
+  { href: "/playbook", label: "사업 플레이북" },
   { href: "/strategy", label: "Phase 전략" },
 ];
 
