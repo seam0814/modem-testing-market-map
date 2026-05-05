@@ -27,6 +27,7 @@ import { MARKET_STATS, FUTURE_TRENDS } from "@/lib/data/market";
 import { HERO_STAT } from "@/lib/data/charts";
 import { MarketSizeBars } from "@/components/charts/MarketSizeBars";
 import { GrowthProjection } from "@/components/charts/GrowthProjection";
+import { CategoryScaleBar } from "@/components/charts/CategoryScaleBar";
 import { EcosystemDiagram } from "@/components/EcosystemDiagram";
 import { cn } from "@/lib/utils";
 
@@ -240,6 +241,13 @@ export default function HomePage() {
                 <p className="mb-4 max-w-3xl text-sm leading-6 text-muted">
                   {CATEGORY_DESC[cat]}
                 </p>
+                <div className="mb-5">
+                  <CategoryScaleBar
+                    category={cat}
+                    players={players}
+                    tone={meta.tone}
+                  />
+                </div>
                 <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                   {players.map((p) => (
                     <PlayerCard key={p.name} player={p} tone={meta.tone} />
