@@ -88,7 +88,7 @@ export const POSITIONS: Position[] = [
       { name: "3gpp.org 공식", type: "commercial", note: "검색 비효율, UI 1990년대" },
       { name: "Tech-invite.com", type: "commercial", note: "개인이 만든 spec 인덱스, 인기 있지만 오래됨" },
       { name: "ChatGPT / Claude", type: "commercial", note: "spec 학습 얕고 hallucination 심함" },
-      { name: "사내 RAG (삼성·화웨이 등)", type: "internal", note: "대기업만 자체 구축, 외부 미공개" },
+      { name: "대형 chipset · OEM 사내 RAG", type: "internal", note: "일부 대기업만 자체 구축, 외부 미공개" },
     ],
     gaps: [
       "3GPP TS·TR 전체를 학습한 specialized AI assistant 부재",
@@ -207,7 +207,7 @@ export const POSITIONS: Position[] = [
     ],
     yourAngle: [
       "Web 기반 AT 시퀀서 + 시나리오 마켓플레이스",
-      "Diag (Qualcomm Diag, Samsung Modem Diag) 통합",
+      "Diag 프로토콜 (Qualcomm Diag, vendor-specific Diag) 통합",
       "결과 자동 비교 → A·F와 결합",
     ],
     firstCustomers: [

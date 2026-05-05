@@ -10,16 +10,16 @@ export default function Page() {
       <section className="grid-bg relative -mx-6 px-6 pt-16 pb-20 md:-mx-10 md:px-10 md:pt-24 md:pb-28">
         <div className="mono mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-muted">
           <Sparkles className="h-3 w-3 text-indigo" />
-          internal · v0.1
+          internal · v0.2
         </div>
         <h1 className="serif max-w-4xl whitespace-pre-line text-4xl leading-[1.1] tracking-tight md:text-6xl">
-          {`비싼 장비 없이도\n`}
-          <span className="text-indigo">가치 있는 모뎀 테스트</span>
-          {`\n영역의 매핑.`}
+          {`88억 가입 · $1.6T 통신 산업.\n`}
+          <span className="text-indigo">비싼 장비 없이도</span>
+          {`\n들어갈 자리는 있다.`}
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg">
-          Anritsu·Keysight 같은 측정 장비가 없어도 충분히 사업이 되는 8개의 포지션을 매핑했습니다.
-          각 포지션마다 기존 플레이어, 빈 자리, 진입 각도, 첫 고객, 가격대를 한 번에 보고 비교하세요.
+          chipset 6곳 · 단말 OEM Top 10 · IoT 모듈 30+곳 · 자동차 TCU OEM 다수 · 위성 통신 신흥 강자들. 이들이 모두
+          모뎀 검증 도구의 잠재 고객입니다. Anritsu·Keysight 같은 측정 장비 없이도 들어갈 8개 포지션을 매핑했습니다.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-3">
@@ -29,6 +29,12 @@ export default function Page() {
           >
             8개 포지션 살펴보기
             <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link
+            href="/market"
+            className="inline-flex h-11 items-center gap-2 rounded-full border border-indigo/40 bg-indigo-bg px-5 text-sm text-indigo-deep transition-colors hover:bg-indigo-soft"
+          >
+            통신 시장 전체 보기
           </Link>
           <Link
             href="/strategy"
@@ -43,17 +49,17 @@ export default function Page() {
         <Insight
           icon={Target}
           title="장비 = 진입 장벽 = 빈 자리"
-          body="비싼 RF 장비를 못 사는 회사들이 한국에만 100개+. 그들이 곧 너의 잠재 고객이고, 큰 회사는 못 만드는 도구를 만들 수 있는 자리야."
+          body="$10B 측정 장비 시장 뒤에, 그 장비를 못 사는 회사가 글로벌 수천 곳. 그들이 곧 잠재 고객이고, 큰 회사는 못 만드는 도구를 만들 수 있는 자리."
         />
         <Insight
           icon={Layers}
-          title="삼성 vendor 모델 X"
-          body="ThunderSoft 같은 글로벌 대형 vendor와 인력 사업으로 정면 경쟁 X. SaaS 도구로 가서 매출 분산하고 매각 가능한 자산화."
+          title="인력 공수 사업 X · 도구 사업 O"
+          body="ThunderSoft·Capgemini 같은 글로벌 대형 vendor와 인력 사업으로 정면 경쟁 X. SaaS 도구로 가서 매출 분산하고 매각 가능한 자산화."
         />
         <Insight
           icon={Sparkles}
-          title="너의 강점과 정확히 맞는 자리"
-          body="모뎀 도메인 + 빠른 웹 prototype 능력 둘 다 있는 사람이 한국에 적어. 이 두 개를 묶으면 AI·LLM 결합 도구 영역에 들어갈 자리가 보임."
+          title="미래 시장 선점 가능"
+          body="위성 D2D · 6G · IoT 폭발 · AI-RAN · V2X 의무화. 앞으로 5년 핵심 트렌드들에 모두 모뎀 검증 도구가 새로 필요해. 지금이 진입 타이밍."
         />
       </section>
 
