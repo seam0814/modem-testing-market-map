@@ -7,10 +7,9 @@ import { Compass, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { href: "/", label: "개요" },
+  { href: "/", label: "통신 시장" },
   { href: "/positions", label: "포지션" },
   { href: "/strategy", label: "Phase 전략" },
-  { href: "/market", label: "한국 시장" },
 ];
 
 export function TopNav() {
