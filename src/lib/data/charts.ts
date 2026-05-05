@@ -11,7 +11,8 @@ export type SegmentBar = {
 // $1.6T (1600B)는 너무 크니까 별도 hero stat으로 분리하고
 // 부품·장비·도구·인프라·미래 segment 비교용
 export const MARKET_BARS: SegmentBar[] = [
-  { id: "satellite-total", label: "위성 통신 (전체)", valueUSD: 300, group: "service", note: "광대역+방송+IoT+항공·해상" },
+  { id: "satellite-total", label: "위성 산업 전체 (방송+통신+장비)", valueUSD: 285, group: "service", note: "DTH방송 $60B + 광대역 $30B + 모바일 $15B + 지상장비 $150B 등 — 통신만 ~$113B" },
+  { id: "satellite-comm", label: "└ 그중 위성 통신 서비스만", valueUSD: 113, group: "service", note: "방송+광대역+모바일+정부. SpaceX Starlink 단독 ~$8B" },
   { id: "5g-infra", label: "5G 인프라 장비", valueUSD: 50, group: "infra", note: "RAN+코어+광 전송" },
   { id: "chipset", label: "모바일 SoC", valueUSD: 45, group: "components", note: "Qualcomm·MTK·Apple·UNISOC" },
   { id: "v2x-tcu", label: "차량 텔레매틱스", valueUSD: 30, group: "components", note: "TCU + V2X 부품" },
