@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f3ee;
+  --surface: #ffffff;
+  --surface-2: #faf8f3;
+  --foreground: #1a1a22;
+  --muted: #5e5e6b;
+  --subtle: #9a99a3;
+  --border: #e6e3da;
+  --border-strong: #c8c4b8;
+  --soft: #ede9df;
+  --indigo: #4f3fd6;
+  --indigo-deep: #2e1fa6;
+  --indigo-soft: #d8d2f8;
+  --indigo-bg: #ece8fc;
+  --amber: #c08727;
+  --amber-soft: #f5e7c5;
+  --coral: #c84033;
+  --coral-soft: #f7d4cf;
+  --forest: #2d6a4f;
+  --forest-soft: #c5e0d2;
+  --forest-bg: #e2f0e8;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-soft: var(--soft);
+  --color-indigo: var(--indigo);
+  --color-indigo-deep: var(--indigo-deep);
+  --color-indigo-soft: var(--indigo-soft);
+  --color-indigo-bg: var(--indigo-bg);
+  --color-amber: var(--amber);
+  --color-amber-soft: var(--amber-soft);
+  --color-coral: var(--coral);
+  --color-coral-soft: var(--coral-soft);
+  --color-forest: var(--forest);
+  --color-forest-soft: var(--forest-soft);
+  --color-forest-bg: var(--forest-bg);
+  --font-sans: var(--font-geist-sans), "Noto Sans KR", system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), "Noto Serif KR", Georgia, serif;
+  --font-mono: var(--font-geist-mono), "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--background);
+  color: var(--foreground);
 }
 
 body {
-  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.012em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum", "ss01";
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--indigo-soft);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(26, 26, 34, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 34, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.dotted-divider {
+  background-image: radial-gradient(circle, var(--border-strong) 1px, transparent 1px);
+  background-size: 6px 6px;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 1px;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out backwards;
 }
